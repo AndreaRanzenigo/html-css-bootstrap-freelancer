@@ -53,7 +53,10 @@ h1, h2, h3 {
 
 /* main */
 main h2 {
-  font-size: 35px;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #1c2221;
 }
 
 /* Main center */
@@ -78,6 +81,20 @@ main h2 {
   color: black;
 }
 
+.main-center .btn:hover i{
+  background-color: black;
+}
+
+.main-center h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.main-center p {
+  font-size: 22px;
+}
+
 /* Main bottom */
 .main-bottom form .btn {
   background-color: #1cba9b;
@@ -93,4 +110,44 @@ main h2 {
   font-size: 20px;
   color: #757f8a;
   font-weight: 400;
+}
+
+/* footer */
+footer {
+  background-color: #29374b;
+}
+
+footer h3, p, i, span {
+  color: #fff;
+}
+
+footer i {
+  font-size: 30px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  transition: background 1s;
+}
+
+footer a {
+  color: #39a996;
+  font-size: 18px;
+}
+
+footer a:hover {
+  color: #2d7a75;
+  text-decoration: underline;
+}
+
+footer i:hover {
+  color: #1c2221;
+  background-color: #fff;
+}
+
+/* footer bottom */
+footer .footer-bottom {
+  background-color: #1c2221;
+  padding-top: 30px;
+  margin-top: 50px;
 }
