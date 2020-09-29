@@ -77,3 +77,20 @@ main h2 {
   background-color: #fff;
   color: black;
 }
+
+/* Main bottom */
+.main-bottom form .btn {
+  background-color: #1cba9b;
+  padding: 15px 25px;
+  color: #fff;
+}
+
+.main-bottom form .btn:hover {
+  background-color: #408888;
+}
+
+.main-bottom form label {
+  font-size: 20px;
+  color: #757f8a;
+  font-weight: 400;
+}
