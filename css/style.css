@@ -57,3 +57,23 @@ main h2 {
 }
 
 /* Main center */
+.main-center {
+  background-color: #1cba9b;
+}
+
+.main-center .btn {
+  padding: 15px 25px;
+  background-color: #1cba9b;
+  border: 2px solid #fff;
+  transition: background 2s;
+}
+
+.main-center .btn i {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.main-center .btn:hover {
+  background-color: #fff;
+  color: black;
+}
