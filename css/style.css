@@ -1,7 +1,11 @@
 /* General */
 
 .box {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 body {
@@ -51,7 +55,29 @@ h1, h2, h3 {
   background-color: #1cba9b;
 }
 
-/* main */
+.jumbotron h1, p {
+  color: #fff;
+  padding-top: 20px;
+}
+
+.jumbotron i {
+  font-size: 25px;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+.jumbotron .star-white::before,
+.jumbotron .star-white::after {
+  display: inline-block;
+  content: "";
+  width: 15%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #fff;
+}
+
+/* Main top*/
 main h2 {
   font-size: 50px;
   font-weight: 700;
@@ -59,9 +85,76 @@ main h2 {
   color: #1c2221;
 }
 
+.main-top .star-colorful i {
+  color: black;
+  vertical-align: middle;
+  font-size: 25px;
+  margin: 0 15px;
+}
+
+.main-top .star-colorful::before,
+.main-top .star-colorful::after {
+  display: inline-block;
+  content: "";
+  width: 15%;
+  height: 4px;
+  background-color: black;
+  border-radius: 3px;
+  border: 1px solid black;
+}
+
+.main-top .box i {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.main-top .box:hover i {
+  display: block;
+  font-size: 60px;
+  color: #fff;
+}
+
+.main-top .box:hover .box-layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 188, 156, 0.9);
+}
+
+.main-top .box .box-layover {
+  transition: background 3s;
+}
+
+.main-top .box {
+  cursor: pointer;
+}
+
 /* Main center */
 .main-center {
   background-color: #1cba9b;
+}
+
+.main-center .star-white i {
+  font-size: 25px;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+
+.main-center .star-white::before,
+.main-center .star-white::after {
+  display: inline-block;
+  content: "";
+  width: 15%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 3px;
+  border: 1px solid #fff;
 }
 
 .main-center .btn {
@@ -106,10 +199,12 @@ main h2 {
   background-color: #408888;
 }
 
-.main-bottom form label {
-  font-size: 20px;
-  color: #757f8a;
-  font-weight: 400;
+.main-bottom input, textarea {
+  padding: 30px 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  border-radius: 0;
+  text-shadow: none;
 }
 
 /* footer */
@@ -150,4 +245,35 @@ footer .footer-bottom {
   background-color: #1c2221;
   padding-top: 30px;
   margin-top: 50px;
+}
+
+/* Phone */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  main h2 {
+    font-size: 22px;
+  }
+
+  .jumbotron i {
+    font-size: 18px;
+  }
+
+  .main-top .star-colorful i {
+    font-size: 18px;
+  }
+
+  .main-center h3 {
+    font-size: 20px;
+  }
+
+  .main-center .star-white i {
+    font-size: 18px;
+  }
+
+  .main-header .navbar .navbar-brand {
+    font-size: 18px;
+  }
 }
